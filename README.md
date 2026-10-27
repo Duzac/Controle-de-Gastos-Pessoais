@@ -1,4 +1,4 @@
-💰 FinTrack
+#💰 FinTrack
 
 Aplicação web full stack para controle de finanças pessoais, com autenticação, cadastro de receitas e despesas, filtros por período e categoria, e gráficos de resumo.
 
@@ -39,7 +39,8 @@ PostgreSQL (local ou na nuvem)
 Git
 Passo a passo
 bash
-# 1. Clone o repositório
+
+Clone o repositório
 git clone https://github.com/Duzac/Controle-de-Gastos-Pessoais.git
 cd Controle-de-Gastos-Pessoais
 
