@@ -2,11 +2,18 @@ require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
 const pool = require('./database/db');
+const authRoutes = require('./routes/authRoutes');
+const categoryRoutes = require('./routes/categoryRoutes');
+const transactionRoutes = require('./routes/transactionRoutes');
 
 const app = express();
 
 app.use(cors());
 app.use(express.json());
+
+app.use('/auth', authRoutes);
+app.use('/categories', categoryRoutes);
+app.use('/transactions', transactionRoutes);
 
 app.get('/health', async (req, res) => {
   try {
