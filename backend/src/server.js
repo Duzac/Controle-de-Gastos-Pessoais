@@ -1,3 +1,4 @@
+const summaryRoutes = require('./routes/summaryRoutes');
 require('dotenv').config();
 const express = require('express');
 const cors = require('cors');
@@ -10,6 +11,7 @@ const app = express();
 
 app.use(cors());
 app.use(express.json());
+app.use('/summary', summaryRoutes);
 
 app.use('/auth', authRoutes);
 app.use('/categories', categoryRoutes);
