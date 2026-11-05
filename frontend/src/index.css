@@ -54,3 +54,122 @@ button:disabled {
   color: #dc2626;
   font-size: 14px;
 }
+
+select {
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 15px;
+  background: #fff;
+}
+
+.painel {
+  max-width: 960px;
+  margin: 24px auto;
+  padding: 0 16px;
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.filtros {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  margin: 16px 0;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.card,
+.bloco {
+  background: #fff;
+  border-radius: 12px;
+  padding: 16px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+}
+
+.card small {
+  color: #6b7280;
+}
+
+.card strong {
+  display: block;
+  margin-top: 4px;
+  font-size: 22px;
+}
+
+.positivo {
+  color: #16a34a;
+}
+
+.negativo {
+  color: #dc2626;
+}
+
+.colunas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+
+@media (max-width: 760px) {
+  .colunas {
+    grid-template-columns: 1fr;
+  }
+}
+
+.lista {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.item small {
+  display: block;
+  color: #6b7280;
+}
+
+.acoes {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.secundario {
+  background: #e5e7eb;
+  color: #111827;
+}
+
+.perigo {
+  background: #dc2626;
+}
+
+.pequeno {
+  padding: 6px 10px;
+  font-size: 13px;
+}
+
+.vazio {
+  color: #6b7280;
+}
