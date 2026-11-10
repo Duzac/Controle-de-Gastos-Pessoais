@@ -139,7 +139,9 @@ Controle-de-Gastos-Pessoais/
 │       ├── pages/
 │       └── services/
 ├── docs/
-└── README.md
+└── dashboard.png
+└── login.png
+└── mobile.png
 ```
 
 ## 📚 Aprendizados
