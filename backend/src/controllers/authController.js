@@ -64,7 +64,8 @@ async function login(req, res) {
       return res.status(401).json({ erro: 'E-mail ou senha inválidos' });
     }
 
-      const expiresIn = (process.env.JWT_EXPIRES_IN || '1d').replace(/["'\s]/g, '') || '1d';
+          const encontrado = String(process.env.JWT_EXPIRES_IN || '').match(/\d+[smhd]/);
+    const expiresIn = encontrado ? encontrado[0] : '1d';
 
     const token = jwt.sign({ id: usuario.id }, process.env.JWT_SECRET, {
       expiresIn,
