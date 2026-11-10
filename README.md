@@ -22,6 +22,18 @@ O projeto foi desenvolvido para praticar o desenvolvimento full stack, incluindo
 - [x] Gráfico de gastos por categoria
 - [x] Interface responsiva para desktop e celular
 
+## 📸 Screenshots
+
+### Tela de login
+![Tela de login](docs/login.png)
+
+### Painel principal
+![Painel completo](docs/dashboard.png)
+
+### Versão mobile
+![Versão para celular](docs/mobile.png)
+
+
 ## 🛠️ Tecnologias utilizadas
 
 | Camada | Tecnologias |
